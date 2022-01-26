@@ -131,6 +131,20 @@ nav,
   margin-right: 50px;
 }
 
+.header-icon.mail {
+  margin-bottom: 0;
+  fill: var(--paragraph-text-color);
+}
+
+.header-icon.tel {
+  fill: var(--paragraph-text-color);
+}
+
+.header-icon:focus,
+.header-icon:hover {
+  fill: var(--accent-color);
+}
+
 .header-contacts-link {
   display: block;
   padding-top: 32px;
@@ -238,6 +252,12 @@ nav,
 .list-work {
   width: 370px;
   margin-right: 30px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--bgc-team-color);
 }
 
 .section-title {

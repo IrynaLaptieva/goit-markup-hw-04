@@ -135,10 +135,12 @@ nav,
 .header-icon.mail {
   margin-bottom: 0;
   fill: var(--paragraph-text-color);
+  vertical-align: middle;
 }
 
 .header-icon.tel {
   fill: var(--paragraph-text-color);
+  vertical-align: middle;
 }
 
 .header-icon:focus,
@@ -332,6 +334,12 @@ nav,
   margin-right: 30px;
 }
 
+.list-item.team {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .list-item:nth-child(4n) {
   margin-right: 0;
 }
@@ -393,25 +401,26 @@ nav,
 
 /* Clients */
 
-.clients-container {
+.clients-link {
+  display: flex;
   width: 170px;
   height: 92px;
-  box-sizing: border-box;
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
   border-radius: 4px;
   border: 1px solid #afb1b8;
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--accent-color);
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .clients-list {
   display: flex;
+  padding-left: 0;
 }
 
 .clients-item + .clients-item {
@@ -419,9 +428,7 @@ nav,
 }
 
 .clients-icon {
-  fill: #afb1b8;
-  width: 106px;
-  height: 60px;
+  fill: currentColor;
 }
 
 /*Footer*/
@@ -482,12 +489,16 @@ nav,
 
 .footer-adress {
   min-width: 231px;
+  margin-right: 70px;
 }
 
 .container .footer-icon {
   display: flex;
+  flex-wrap: wrap;
+  width: 206px;
   justify-content: flex-start;
   padding: 0;
+  margin: 0;
 }
 
 .go {
@@ -554,6 +565,13 @@ nav,
 
 .portfolio-filter .filter-item + .filter-item {
   margin-left: 8px;
+}
+
+.filter-item:hover,
+.filter-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .portfolio-link {
@@ -625,6 +643,12 @@ nav,
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: var(--primary-light-color);
+}
+
+.portfolio-element:hover,
+.portfolio-element:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-element:nth-child(3n) {

@@ -7,6 +7,7 @@
   --adress-text-color: rgba(255, 255, 255, 0.6); /*цвет текста в футере*/
   --logo-part1-color: #000000;
   --bgc-team-color: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 .container {
@@ -254,6 +255,19 @@ nav,
   margin-right: 30px;
 }
 
+.benefits-container {
+  width: 270px;
+  height: 120px;
+  box-sizing: border-box;
+  background-color: var(--bgc-team-color);
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .benefits-icon {
   width: 70px;
   height: 70px;
@@ -287,7 +301,8 @@ nav,
 }
 
 .work,
-.team-title {
+.team-title,
+.clients-title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -337,6 +352,76 @@ nav,
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+/* --Icon-- */
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.team-item + .team-item {
+  margin-left: 10px;
+}
+
+.team-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: var(--primary-light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-icon {
+  fill: var(--icon-color);
+}
+
+.team-icon:hover,
+.team-icon:focus {
+  fill: var(--primary-light-color);
+}
+
+/* Clients */
+
+.clients-container {
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color);
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+  width: 106px;
+  height: 60px;
 }
 
 /*Footer*/
@@ -386,6 +471,61 @@ nav,
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--accent-color);
+}
+
+/* --Icon footer-- */
+
+.footer-central {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-adress {
+  min-width: 231px;
+}
+
+.container .footer-icon {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.go {
+  color: var(--primary-light-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.footer-icon-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-icon-item + .footer-icon-item {
+  margin-left: 10px;
+}
+
+.footer-icon-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-light-color);
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* Сайт Портфолио */
